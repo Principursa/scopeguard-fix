@@ -82,7 +82,7 @@ task("allowTarget", "Allows a target address.")
       "ScopeGuard",
       taskArgs.guard
     );
-    await guard.allowTarget(taskArgs.target);
+    await guard.setTargetAllowed(taskArgs.target,true);
 
     console.log("Target allowed: ", taskArgs.target);
   });
